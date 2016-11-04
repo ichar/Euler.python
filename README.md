@@ -25,10 +25,11 @@ Options:
 
 v1.0[Python3]
 
->>> python fibonacci.py -d -oe 10
+> python fibonacci.py -d -oe 10
 
 3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
->>> Started at 2016-11-04 03:28:44.717000
+Started at 2016-11-04 03:28:44.717000
+
 1
 2
 3
@@ -40,13 +41,15 @@ v1.0[Python3]
 55
 89
 231
->>> Finished at 2016-11-04 03:28:44.717000
->>> Spent time: 0 msec (0.0 sec)
 
->>> python fibonacci.py -d -e -l 4000000
+Finished at 2016-11-04 03:28:44.717000
+Spent time: 0 msec (0.0 sec)
+
+> python fibonacci.py -d -e -l 4000000
 
 3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
->>> Started at 2016-11-04 03:29:56.271000
+Started at 2016-11-04 03:29:56.271000
+
 2
 8
 34
@@ -59,8 +62,9 @@ v1.0[Python3]
 832040
 3524578
 4613732
->>> Finished at 2016-11-04 03:29:56.272000
->>> Spent time: 1000 msec (0.001 sec)
+
+Finished at 2016-11-04 03:29:56.272000
+Spent time: 1000 msec (0.001 sec)
 
 ===========
 euler_f.py:
@@ -76,25 +80,29 @@ Format: python euler_f.py [d] <number>
 
 Options:
 
-  -d: debug flag 0/1
+    -d: debug flag 0/1
 
 v1.0[Python3]
 
->>> python euler_f 13195
+> python euler_f 13195
 
 3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
->>> Started at 2016-11-04 02:15:43.056000
+Started at 2016-11-04 02:15:43.056000
+
 29 [5, 7, 13, 29]
->>> Finished at 2016-11-04 02:15:43.056000
->>> Spent time: 0 msec (0.0 sec)
 
->>> python euler_f 600851475143
+Finished at 2016-11-04 02:15:43.056000
+Spent time: 0 msec (0.0 sec)
+
+> python euler_f 600851475143
 
 3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
->>> Started at 2016-11-04 02:16:57.175000
+Started at 2016-11-04 02:16:57.175000
+
 6857 [71, 839, 1471, 6857]
->>> Finished at 2016-11-04 02:16:57.186000
->>> Spent time: 11000 msec (0.011 sec)
+
+Finished at 2016-11-04 02:16:57.186000
+Spent time: 11000 msec (0.011 sec)
 
 ==============
 palindrome.py:
@@ -109,14 +117,15 @@ Format: python palindrome.py [-d] <n>
 
 Options:
 
-  -d: debug flag 0/1
+    -d: debug flag 0/1
 
 v1.0[Python3]
 
->>> python palindrome.py -d 2
+> python palindrome.py -d 2
 
 3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
->>> Started at 2016-11-04 03:34:14.272000
+Started at 2016-11-04 03:34:14.272000
+
 99*98=9702
 99*97=9603
 99*96=9504
@@ -126,16 +135,19 @@ v1.0[Python3]
 99*92=9108
 99*91=9009
 (9009, 99, 91)
->>> Finished at 2016-11-04 03:34:14.273000
->>> Spent time: 1000 msec (0.001 sec)
 
->>> python palindrome.py 3
+Finished at 2016-11-04 03:34:14.273000
+Spent time: 1000 msec (0.001 sec)
+
+> python palindrome.py 3
 
 3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
->>> Started at 2016-11-04 03:35:50.766000
+Started at 2016-11-04 03:35:50.766000
+
 (580085, 995, 583)
->>> Finished at 2016-11-04 03:35:50.805000
->>> Spent time: 39000 msec (0.039 sec)
+
+Finished at 2016-11-04 03:35:50.805000
+Spent time: 39000 msec (0.039 sec)
 
 ===========
 collatz.py:
@@ -151,27 +163,31 @@ Format: python collatz.py [-d] <number>
 
 Options:
 
-  -d: debug flag 0/1
+    -d: debug flag 0/1
 
 v1.0[Python3]
 
->>> python collatz.py 13
+> python collatz.py 13
 
 3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
->>> Started at 2016-11-04 02:26:59.947000
+Started at 2016-11-04 02:26:59.947000
+
 9 -> 28 -> 14 -> 7 -> 22 -> 11 -> 34 -> 17 -> 52 -> 26 -> 13 -> 40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1
 len: 20
->>> Finished at 2016-11-04 02:26:59.948000
->>> Spent time: 1000 msec (0.001 sec)
 
->>> python collatz.py 1000000
+Finished at 2016-11-04 02:26:59.948000
+Spent time: 1000 msec (0.001 sec)
+
+> python collatz.py 1000000
 
 3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
->>> Started at 2016-11-04 02:27:44.514000
+Started at 2016-11-04 02:27:44.514000
+
 837799 -> 2513398 -> 1256699 -> 3770098 -> 1885049 -> 5655148 -> 2827574 -> 1413787 -> 4241362 -> 2120681 -> 6362044 ... 53 -> 160 -> 80 -> 40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1
 len: 525
->>> Finished at 2016-11-04 02:30:13.447000
->>> Spent time: 148933000 msec (148.933 sec)
+
+Finished at 2016-11-04 02:30:13.447000
+Spent time: 148933000 msec (148.933 sec)
 
 =============
 factorial.py:
@@ -186,28 +202,36 @@ Format: python factorial.py [d] <number>
 
 Options:
 
-  -d: debug flag 0/1
+    -d: debug flag 0/1
 
 v1.0[Python3]
 
->>> python factorial.py -d 10
+> python factorial.py -d 10
 
 3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
->>> Started at 2016-11-04 02:41:46.558000
+Started at 2016-11-04 02:41:46.558000
+
 3628800
->>> Factorial at 2016-11-04 02:41:46.558000
->>> Spent time: 0 msec (0.0 sec)
-27
->>> Finished at 2016-11-04 02:41:46.558000
->>> Spent time: 0 msec (0.0 sec)
 
->>> python factorial.py -d 100
+Factorial at 2016-11-04 02:41:46.558000
+Spent time: 0 msec (0.0 sec)
+
+27
+
+Finished at 2016-11-04 02:41:46.558000
+Spent time: 0 msec (0.0 sec)
+
+> python factorial.py -d 100
 
 3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
->>> Started at 2016-11-04 02:42:14.641000
+Started at 2016-11-04 02:42:14.641000
+
 93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000
->>> Factorial at 2016-11-04 02:42:14.641000
->>> Spent time: 0 msec (0.0 sec)
+
+Factorial at 2016-11-04 02:42:14.641000
+Spent time: 0 msec (0.0 sec)
+
 648
->>> Finished at 2016-11-04 02:42:14.642000
->>> Spent time: 1000 msec (0.001 sec)
+
+Finished at 2016-11-04 02:42:14.642000
+Spent time: 1000 msec (0.001 sec)
