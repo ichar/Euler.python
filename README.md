@@ -149,6 +149,44 @@ Started at 2016-11-04 03:35:50.766000
 Finished at 2016-11-04 03:35:50.805000
 Spent time: 39000 msec (0.039 sec)
 
+==============
+pythagorean.py
+==============
+
+Euler Project.
+--------------
+Problem 9. Special Pythagorean triplet.
+There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find the product abc.
+http://euler.jakumo.org/problems/view/9.html
+
+Format: python pythagorean.py [-d] <number>
+
+Options:
+
+  -d: debug flag 0/1
+
+v1.0[Python3]
+
+> python pythagorean.py 12
+
+3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
+Started at 2016-11-05 02:33:15.472000
+
+(4, 3, 5) 60
+
+Finished at 2016-11-05 02:33:15.472000
+Spent time: 0 msec (0.0 sec)
+
+> python pythagorean.py 1000
+
+3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
+Started at 2016-11-05 02:33:46.557000
+
+(200, 375, 425) 31875000
+
+Finished at 2016-11-05 02:33:46.557000
+Spent time: 0 msec (0.0 sec)
+
 ===========
 collatz.py:
 ===========
