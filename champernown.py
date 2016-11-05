@@ -69,7 +69,9 @@ if __name__ == '__main__':
         print('--> Options:')
         print('--> ')
         print('-->   -d: debug flag 0/1')
-        print('-->   -D: deepdebug flag 0/1')
+        print('-->   -D: deepdebug flag 0/1 (prints sequence on the screen)')
+        print('--> ')
+        print('--> Warning! Be carefull with -D.')
         print('--> ')
         print('--> v%s[Python3]' % version)
         

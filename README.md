@@ -303,12 +303,14 @@ Problem 40. Champernowne's constant.
 Find the value of the following expression: d1 * d10 * d100 * d1000 ...
 http://euler.jakumo.org/problems/view/40.html
 
-Format: python champernown.py [-d] <n1> <n2> <n3> ...
+Format: python champernown.py [-dD] <n1> <n2> <n3> ...
 
 Options:
 
     -d: debug flag 0/1
-    -D: deepdebug flag 0/1
+    -D: deepdebug flag 0/1 (prints sequence on the screen)
+
+Warning! Be carefull with -D.
 
 v1.0[Python3]
 
