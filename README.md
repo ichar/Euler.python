@@ -159,11 +159,13 @@ Problem 9. Special Pythagorean triplet.
 There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find the product abc.
 http://euler.jakumo.org/problems/view/9.html
 
-Format: python pythagorean.py [-d] <number>
+Format: python pythagorean.py [-d] [-all] <number> [<mode>]
 
 Options:
 
-  -d: debug flag 0/1
+    -d: debug flag 0/1
+    -D: deepdebug flag 0/1
+    -all: find all feasible solutions
 
 v1.0[Python3]
 
@@ -186,6 +188,23 @@ Started at 2016-11-05 02:33:46.557000
 
 Finished at 2016-11-05 02:33:46.557000
 Spent time: 0 msec (0.0 sec)
+
+> python pythagorean.py -d -all 1080
+
+3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
+Started at 2016-11-05 03:12:31.836000
+
+mode:3
+
+1080: (432, 180, 468)
+Итерация: 147
+1080: (280, 351, 449)
+Итерация: 177
+
+[(432, 180, 468), (280, 351, 449)] ... Total:2
+
+Finished at 2016-11-05 03:12:31.940000
+Spent time: 104000 msec (0.104 sec)
 
 ===========
 collatz.py:
