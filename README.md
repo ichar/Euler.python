@@ -76,7 +76,7 @@ Problem 3. Largest prime factor.
 What is the largest prime factor of the number?
 https://projecteuler.net/problem=3
 
-Format: python euler_f.py [d] \<number\>
+Format: python euler_f.py [-d] \<number\>
 
 Options:
 

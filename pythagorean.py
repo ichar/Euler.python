@@ -115,9 +115,10 @@ if __name__ == '__main__':
         print('--> ')
         print('--> Options:')
         print('--> ')
-        print('-->   -d: debug flag 0/1')
-        print('-->   -D: deepdebug flag 0/1')
-        print('-->   -all: find all feasible solutions')
+        print('-->   -d    : debug flag 0/1')
+        print('-->   -D    : deepdebug flag 0/1')
+        print('-->   -all  : find all feasible solutions')
+        print('-->   -mode : number of run-function (method): 1|2|3, default: 3')
         print('--> ')
         print('--> v%s[Python3]' % version)
         
