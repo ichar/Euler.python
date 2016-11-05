@@ -15,18 +15,20 @@ COMMAS = '"'
 ## --------------------------------- ##
 
 def valid(num):
+    # Целое положительное число?
     return num and num > 0 and int(num) == num and True or False
 
 def D(a,b,c):
+    # Дескриминант
     return b*b - 4*a*c
 
 def exists(num):
-    # Корни квадратного уравнения: A*x*x + B*x + C = 0, где
+    # Решение квадратного уравнения: A*x*x + B*x + C = 0, где
     #   A = 1
     #   B = 1
     #   C = -2*<код числа>
-    # Расчет значения D (дескриминанта) и значений корней. 
-    # Должен существовать хотя бы один натуральный корень: x > 0, x in (N)
+    # Расчет D и значений корней. 
+    # Должен существовать хотя бы один натуральный корень: x > 0, x in (N).
     #
     a, b, c = 1, 1, -2*num
     d = D(a,b,c)
@@ -55,8 +57,10 @@ def is_triangle(word):
     if word.startswith(COMMAS) and word.endswith(COMMAS):
         w = word[1:-1]
     code = sum(ord(s) - ABC_LEN for s in w.lower())
+
     if deepdebug:
         print('>>> Word [%s]: %s' % (w, code))
+
     return exists(code)
 
 def calculate(words):
