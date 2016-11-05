@@ -163,9 +163,10 @@ Format: python pythagorean.py [-d] [-all] \<number\> [\<mode\>]
 
 Options:
 
-    -d: debug flag 0/1
-    -D: deepdebug flag 0/1
-    -all: find all feasible solutions
+    -d:     debug flag 0/1
+    -D:     deepdebug flag 0/1
+    -all:   find all feasible solutions
+    -mode:  number of run-function (method): 1|2|3, default: 3
 
 v1.0[Python3]
 
