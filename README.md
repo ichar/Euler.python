@@ -307,8 +307,8 @@ Format: python champernown.py [-d] <n1> <n2> <n3> ...
 
 Options:
 
-  -d: debug flag 0/1
-  -D: deepdebug flag 0/1
+    -d: debug flag 0/1
+    -D: deepdebug flag 0/1
 
 v1.0[Python3]
 
