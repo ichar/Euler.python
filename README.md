@@ -14,7 +14,7 @@ Problem 2. Sum of odd/even in the limited Fibonacci sequence of the number.
 By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 http://euler.jakumo.org/problems/view/2.html
 
-Format: python fibonacci.py [-d] [-oe] [-l] <number>
+Format: python fibonacci.py [-d] [-oe] [-l] \<number\>
 
 Options:
 
@@ -76,7 +76,7 @@ Problem 3. Largest prime factor.
 What is the largest prime factor of the number?
 https://projecteuler.net/problem=3
 
-Format: python euler_f.py [d] <number>
+Format: python euler_f.py [d] \<number\>
 
 Options:
 
@@ -113,7 +113,7 @@ Euler Project.
 Problem 4. Find the largest palindrome made from the product of two n-digit numbers.
 http://euler.jakumo.org/problems/view/4.html
 
-Format: python palindrome.py [-d] <n>
+Format: python palindrome.py [-d] \<n\>
 
 Options:
 
@@ -159,7 +159,7 @@ Problem 9. Special Pythagorean triplet.
 There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find the product abc.
 http://euler.jakumo.org/problems/view/9.html
 
-Format: python pythagorean.py [-d] [-all] <number> [<mode>]
+Format: python pythagorean.py [-d] [-all] \<number\> [\<mode\>]
 
 Options:
 
@@ -255,7 +255,7 @@ Euler Project.
 Problem 20. Sum of digits in factorial of the number.
 http://euler.jakumo.org/problems/view/20.html
 
-Format: python factorial.py [-d] <number>
+Format: python factorial.py [-d] \<number\>
 
 Options:
 
