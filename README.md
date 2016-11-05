@@ -18,10 +18,14 @@ Format: python fibonacci.py [-d] [-oe] [-l] \<number\>
 
 Options:
 
-  -d: debug flag 0/1
-  -o: sum of odd numbers
-  -e: sum of even numbers
-  -l: limited by the given number
+    -d:     debug flag 0/1
+    -o:     sum of odd numbers
+    -e:     sum of even numbers
+    -l:     limited by the given number
+
+Arguments:
+
+    number: limit sum value (4000000)
 
 v1.0[Python3]
 
@@ -80,7 +84,11 @@ Format: python euler_f.py [-d] \<number\>
 
 Options:
 
-    -d: debug flag 0/1
+    -d:     debug flag 0/1
+
+Arguments:
+
+    number: some number value (13195)
 
 v1.0[Python3]
 
@@ -117,7 +125,11 @@ Format: python palindrome.py [-d] \<n\>
 
 Options:
 
-    -d: debug flag 0/1
+    -d:     debug flag 0/1
+
+Arguments:
+
+    n:      degree of numbers (2|3|4 ...)
 
 v1.0[Python3]
 
@@ -159,14 +171,18 @@ Problem 9. Special Pythagorean triplet.
 There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find the product abc.
 http://euler.jakumo.org/problems/view/9.html
 
-Format: python pythagorean.py [-d] [-all] \<number\> [\<mode\>]
+Format: python pythagorean.py [-dD] [-all] \<number\> [\<mode\>]
 
 Options:
 
     -d:     debug flag 0/1
     -D:     deepdebug flag 0/1
     -all:   find all feasible solutions
-    -mode:  number of run-function (method): 1|2|3, default: 3
+
+Arguments:
+
+    number: perimeter value (a + b + c)
+    mode:   number of run-function (method): 1|2|3, default: 3
 
 v1.0[Python3]
 
@@ -221,7 +237,11 @@ Format: python collatz.py [-d] \<number\>
 
 Options:
 
-    -d: debug flag 0/1
+    -d:     debug flag 0/1
+
+Arguments:
+
+    number: limit of chain value (4000000)
 
 v1.0[Python3]
 
@@ -260,7 +280,11 @@ Format: python factorial.py [-d] \<number\>
 
 Options:
 
-    -d: debug flag 0/1
+    -d:     debug flag 0/1
+
+Arguments:
+
+    number: source value (100)
 
 v1.0[Python3]
 
@@ -308,8 +332,12 @@ Format: python champernown.py [-dD] \<n1\> \<n2\> \<n3\> ...
 
 Options:
 
-    -d: debug flag 0/1
-    -D: deepdebug flag 0/1 (prints sequence on the screen)
+    -d:     debug flag 0/1
+    -D:     deepdebug flag 0/1 (prints sequence on the screen)
+
+Arguments:
+
+    nX:     digit positions list item (1 10 100 ...)
 
 Warning! Be carefull with -D.
 
