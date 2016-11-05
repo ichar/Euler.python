@@ -359,7 +359,7 @@ triangle_words.py
 
 Euler Project.
 --------------
-Problem 9. Coded triangle numbers.
+Problem 42. Coded triangle numbers.
 How many are triangle words in the given file?
 http://euler.jakumo.org/problems/view/42.html
 
