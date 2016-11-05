@@ -292,3 +292,32 @@ Spent time: 0 msec (0.0 sec)
 
 Finished at 2016-11-04 02:42:14.642000
 Spent time: 1000 msec (0.001 sec)
+
+==============
+champernown.py
+==============
+
+Euler Project.
+--------------
+Problem 40. Champernowne's constant.
+Find the value of the following expression: d1*d10*d100*d1000 ...
+http://euler.jakumo.org/problems/view/40.html
+
+Format: python champernown.py [-d] <n1> <n2> <n3> ...
+
+Options:
+
+  -d: debug flag 0/1
+  -D: deepdebug flag 0/1
+
+v1.0[Python3]
+
+> python champernown.py 1 10 100 1000 10000 100000 1000000
+
+3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
+Started at 2016-11-05 06:09:44.462000
+
+[1, 1, 5, 3, 7, 2, 1] 210
+
+Finished at 2016-11-05 06:09:44.737000
+Spent time: 275000 msec (0.275 sec)
