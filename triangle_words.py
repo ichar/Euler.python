@@ -60,11 +60,7 @@ def is_triangle(word):
     return exists(code)
 
 def calculate(words):
-    res = []
-    for w in words:
-        if is_triangle(w):
-            res.append(w)
-    return res
+    return [w for w in words if is_triangle(w)]
 
 def go(line, i=1):
     words = line.split(',')
