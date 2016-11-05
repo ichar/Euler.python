@@ -3,7 +3,7 @@
 import sys
 from lib.utils import *
 
-version = '2.0'
+version = '2.01'
 
 isOdd = isEven = isLimit = False
 
