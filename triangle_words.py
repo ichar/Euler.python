@@ -19,7 +19,7 @@ def valid(num):
     return num and num > 0 and int(num) == num and True or False
 
 def D(a,b,c):
-    # Дескриминант
+    # Дискриминант
     return b*b - 4*a*c
 
 def exists(num):
@@ -136,8 +136,6 @@ if __name__ == '__main__':
                     debug = 1
                 if 'D' in x[1:]:
                     deepdebug = 1
-                if 'all' in x[1:]:
-                    all = True
             elif not source:
                 source = not x.isdigit() and x or None
             else:
