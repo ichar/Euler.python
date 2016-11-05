@@ -3,7 +3,7 @@
 import sys
 from lib.utils import *
 
-version = '1.0'
+version = '1.01'
 
 
 class euler_f:
