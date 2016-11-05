@@ -216,7 +216,7 @@ Problem 14. Longest Collatz sequence.
 Which starting number, under one million, produces the longest chain?
 https://projecteuler.net/problem=14
 
-Format: python collatz.py [-d] <number>
+Format: python collatz.py [-d] \<number\>
 
 Options:
 
@@ -255,7 +255,7 @@ Euler Project.
 Problem 20. Sum of digits in factorial of the number.
 http://euler.jakumo.org/problems/view/20.html
 
-Format: python factorial.py [d] <number>
+Format: python factorial.py [-d] <number>
 
 Options:
 
@@ -303,7 +303,7 @@ Problem 40. Champernowne's constant.
 Find the value of the following expression: d1 * d10 * d100 * d1000 ...
 http://euler.jakumo.org/problems/view/40.html
 
-Format: python champernown.py [-dD] <n1> <n2> <n3> ...
+Format: python champernown.py [-dD] \<n1\> \<n2\> \<n3\> ...
 
 Options:
 
