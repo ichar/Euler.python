@@ -4,7 +4,7 @@ import sys
 import math
 from lib.utils import *
 
-version = '1.0'
+version = '1.01'
 
 debug = 0
 deepdebug = 0
