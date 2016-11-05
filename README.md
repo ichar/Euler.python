@@ -352,3 +352,239 @@ Started at 2016-11-05 06:09:44.462000
 
 Finished at 2016-11-05 06:09:44.737000
 Spent time: 275000 msec (0.275 sec)
+
+=================
+triangle_words.py
+=================
+
+Euler Project.
+--------------
+Problem 9. Coded triangle numbers.
+How many are triangle words in the given file?
+http://euler.jakumo.org/problems/view/42.html
+
+Format: python pythagorean.py [-dD] <source> [<mode>]
+
+Options:
+
+    -d     : debug flag 0/1
+    -D     : deepdebug flag 0/1
+
+Arguments:
+
+    source : "word.txt" file path
+    mode   : number of run-function (method): 1|2, default: 1
+
+Method mode=1 checks the file, and mode=2 - simple words only: ABOVE,ABSOLUTELY,SOLUTION.
+
+Note that words in the file enclosed in quotation marks!
+
+v1.0[Python3]
+
+> python triangle_words.py -d words.txt
+
+3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
+Started at 2016-11-05 09:37:01.544000
+Words count in line [1]: 1786
+
+"ABILITY"
+"ABOVE"
+"ACCOMPANY"
+"ACHIEVEMENT"
+"AGENCY"
+"AGREE"
+"AIR"
+"ALREADY"
+"AN"
+"ANCIENT"
+"APPARENT"
+"APPOINT"
+"APPROACH"
+"ASSUME"
+"AT"
+"ATMOSPHERE"
+"BAG"
+"BAND"
+"BANK"
+"BAR"
+"BEAT"
+"BELONG"
+"BENEATH"
+"BONE"
+"BOTH"
+"BRIDGE"
+"BUILDING"
+"BURN"
+"CALL"
+"CAPACITY"
+"CAREFUL"
+"CASE"
+"CHILD"
+"CIVIL"
+"CLOSELY"
+"COME"
+"CONFIDENCE"
+"CONFIRM"
+"CONSERVATIVE"
+"CONSTRUCTION"
+"CONTENT"
+"COULD"
+"CURRENTLY"
+"DECISION"
+"DEFINITION"
+"DEMOCRATIC"
+"DEPUTY"
+"DESPITE"
+"DISTINCTION"
+"EAST"
+"EDGE"
+"EDUCATIONAL"
+"EFFECT"
+"EQUIPMENT"
+"EVENT"
+"FACE"
+"FAIL"
+"FAMILY"
+"FEEL"
+"FIELD"
+"FIGURE"
+"FLOOR"
+"FREEDOM"
+"FUND"
+"FUTURE"
+"GENTLEMAN"
+"GREY"
+"GROWTH"
+"HAIR"
+"HAPPY"
+"HAVE"
+"HERE"
+"HIS"
+"IF"
+"INCIDENT"
+"INCREASED"
+"INCREASINGLY"
+"INDIVIDUAL"
+"INSTRUMENT"
+"INTEND"
+"INTENTION"
+"IS"
+"LAW"
+"LEADER"
+"LEAVE"
+"LENGTH"
+"LESS"
+"LITTLE"
+"LOVELY"
+"MAN"
+"MATCH"
+"MERELY"
+"MILK"
+"MISTAKE"
+"MOVE"
+"MUCH"
+"NEED"
+"NOTICE"
+"OBJECT"
+"OBJECTIVE"
+"OF"
+"OIL"
+"ONLY"
+"OTHER"
+"OURSELVES"
+"PART"
+"PASS"
+"PATH"
+"PERFORM"
+"PRISON"
+"PRIVATE"
+"PROBABLY"
+"PROCEDURE"
+"QUALITY"
+"QUESTION"
+"RANGE"
+"READ"
+"REAL"
+"RELIEF"
+"REMOVE"
+"REPRESENT"
+"REQUEST"
+"RESPOND"
+"RIDE"
+"SAMPLE"
+"SAY"
+"SEAT"
+"SECURITY"
+"SINGLE"
+"SKY"
+"SOIL"
+"SOLICITOR"
+"SONG"
+"SOUTHERN"
+"SPIRIT"
+"START"
+"SUGGESTION"
+"TALL"
+"TAX"
+"THEORY"
+"THREATEN"
+"THROUGHOUT"
+"TITLE"
+"TOOTH"
+"TOTALLY"
+"TRAVEL"
+"TYPE"
+"UNABLE"
+"UNDERSTAND"
+"UPON"
+"USE"
+"VARIOUS"
+"VARY"
+"VIDEO"
+"WAGE"
+"WARM"
+"WATCH"
+"WE"
+"WHILST"
+"WIDELY"
+"WOMAN"
+
+Triangle words: 161
+Total:161
+
+Finished at 2016-11-05 09:37:01.573000
+Spent time: 29000 msec (0.029 sec)
+
+> python triangle_words.py -D ABOVE,ABSOLUTELY,SOLUTION 2
+
+3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
+Started at 2016-11-05 09:39:01.049000
+
+Word [ABOVE]: 45
+D [45]: 361
+x1[9.0], x2[-10.0], valid: True
+Word [ABSOLUTELY]: 132
+D [132]: 1057
+x1[15.75576820700886], x2[-16.75576820700886], valid: False
+Word [SOLUTION]: 125
+D [125]: 1001
+x1[15.319292019556375], x2[-16.319292019556375], valid: False
+
+Total:1
+
+Finished at 2016-11-05 09:39:01.050000
+Spent time: 1000 msec (0.001 sec)
+
+> python triangle_words.py -D SKY 2
+
+3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
+Started at 2016-11-05 09:43:56.662000
+
+Word [SKY]: 55
+D [55]: 441
+x1[10.0], x2[-11.0], valid: True
+
+Total:1
+
+Finished at 2016-11-05 09:43:56.662000
+Spent time: 0 msec (0.0 sec)
