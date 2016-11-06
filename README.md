@@ -318,6 +318,89 @@ Spent time: 0 msec (0.0 sec)
 Finished at 2016-11-04 02:42:14.642000
 Spent time: 1000 msec (0.001 sec)
 
+==========
+spiral.py:
+==========
+
+Euler Project.
+--------------
+Problem 28. Number spiral diagonals.
+What is the sum of the numbers on the diagonals in a 1001 by 1001 spiral formed in the same way?
+http://euler.jakumo.org/problems/view/28.html
+
+Format: python pythagorean.py [-dD] <number>
+
+Options:
+
+  -d    : debug flag 0/1
+  -D    : deepdebug flag 0/1 (prints sequence on the screen)
+
+Warning! Be carefull with -D.
+
+v1.0[Python3]
+
+> python spiral.py -dD 5
+
+3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
+Started at 2016-11-06 06:29:14.174000
+
+2 R:1 (1:0)
+3 R:1 (2:0)
+R:1 [1, 3])
+4 R:1 (1:1)
+5 R:1 (2:1)
+R:1 [1, 3, 5])
+6 R:1 (1:2)
+7 R:1 (2:2)
+R:1 [1, 3, 5, 7])
+8 R:1 (1:3)
+9 R:1 (2:3)
+R:1 [1, 3, 5, 7, 9])
+10 R:2 (1:0)
+11 R:2 (2:0)
+12 R:2 (3:0)
+13 R:2 (4:0)
+R:2 [1, 3, 5, 7, 9, 13])
+14 R:2 (1:1)
+15 R:2 (2:1)
+16 R:2 (3:1)
+17 R:2 (4:1)
+R:2 [1, 3, 5, 7, 9, 13, 17])
+18 R:2 (1:2)
+19 R:2 (2:2)
+20 R:2 (3:2)
+21 R:2 (4:2)
+R:2 [1, 3, 5, 7, 9, 13, 17, 21])
+22 R:2 (1:3)
+23 R:2 (2:3)
+24 R:2 (3:3)
+25 R:2 (4:3)
+R:2 [1, 3, 5, 7, 9, 13, 17, 21, 25])
+
+[1, 3, 5, 7, 9, 13, 17, 21, 25]
+Total selected items in the spiral:9 Sum:101
+
+Finished at 2016-11-06 06:29:14.174000
+Spent time: 0 msec (0.0 sec)
+
+> python spiral.py 101
+
+3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
+Started at 2016-11-06 06:29:57.653000
+
+Total selected items in the spiral:201 Sum:692101
+
+Finished at 2016-11-06 06:29:57.663000
+Spent time: 10000 msec (0.01 sec)
+
+3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
+Started at 2016-11-06 06:30:15.565000
+
+Total selected items in the spiral:2001 Sum:669171001
+
+Finished at 2016-11-06 06:30:16.739000
+Spent time: 1174000 msec (1.174 sec)
+
 ==============
 champernown.py
 ==============
