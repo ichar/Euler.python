@@ -378,7 +378,7 @@ R:2 [1, 3, 5, 7, 9, 13, 17, 21])
 R:2 [1, 3, 5, 7, 9, 13, 17, 21, 25])
 
 [1, 3, 5, 7, 9, 13, 17, 21, 25]
-Total selected items in the spiral:9 Sum:101
+Total selected items in the spiral: 9 Sum: 101
 
 Finished at 2016-11-06 06:29:14.174000
 Spent time: 0 msec (0.0 sec)
@@ -388,7 +388,7 @@ Spent time: 0 msec (0.0 sec)
 3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
 Started at 2016-11-06 06:29:57.653000
 
-Total selected items in the spiral:201 Sum:692101
+Total selected items in the spiral: 201 Sum: 692101
 
 Finished at 2016-11-06 06:29:57.663000
 Spent time: 10000 msec (0.01 sec)
@@ -396,7 +396,7 @@ Spent time: 10000 msec (0.01 sec)
 3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
 Started at 2016-11-06 06:30:15.565000
 
-Total selected items in the spiral:2001 Sum:669171001
+Total selected items in the spiral: 2001 Sum: 669171001
 
 Finished at 2016-11-06 06:30:16.739000
 Spent time: 1174000 msec (1.174 sec)
