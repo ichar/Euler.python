@@ -393,6 +393,8 @@ Total selected items in the spiral: 201 Sum: 692101
 Finished at 2016-11-06 06:29:57.663000
 Spent time: 10000 msec (0.01 sec)
 
+> python spiral.py 1001
+
 3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
 Started at 2016-11-06 06:30:15.565000
 
