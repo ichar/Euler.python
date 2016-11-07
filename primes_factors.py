@@ -74,7 +74,7 @@ def decompose(num):
     if run1(99):
         n = num
         p = 0
-        while (n > 1): # or not prime(n)
+        while n > 1:
             x = seq[p]
             if n % x == 0:
                 divs.append(x)
@@ -92,7 +92,7 @@ def decompose(num):
         # Подсчет множителей.
         # Запись вида: (x1**n1)*(x2**n2)...
         s = ''
-        for x in set(divs):
+        for x in sorted(set(divs)):
             if s:
                 s += '*'
             i = 0
