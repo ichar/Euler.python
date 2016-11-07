@@ -673,3 +673,74 @@ Total:1
 
 Finished at 2016-11-05 09:43:56.662000
 Spent time: 0 msec (0.0 sec)
+
+==================
+primes_factors.py:
+==================
+
+Euler Project.
+--------------
+Problem 47. Distinct primes factors.
+Find the first four consecutive integers to have four distinct prime factors each.
+http://euler.jakumo.org/problems/view/47.html
+
+Format: python primes_factors.py [-dD] [-demo] <n|number> [<mode>]
+
+Options:
+
+    -d     : debug flag 0/1
+    -D     : deepdebug flag 0/1
+    -demo  : demo mode
+
+Arguments:
+
+    n      : primarity count (x1*x2*...*xn), mode=0
+    number : value for subtasks
+    mode   : number of run-function (method): 0|1|2|3, default: 0
+
+Subtasks (extra functions):
+
+    mode=1 : Get next prime number over the given one
+    mode=2 : Check if the given number is a prime
+    mode=3 : Get simple decomposition of the given number
+
+v1.0[Python3]
+
+> python primes_factors.py 4
+
+3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
+Started at 2016-11-07 13:49:40.787000
+
+[134043, 134044, 134045, 134046]
+
+Finished at 2016-11-07 13:49:45.719000
+Spent time: 4932000 msec (4.932 sec)
+
+Check if the given number is a prime
+------------------------------------
+
+> python primes_factors.py -dD 134043 2
+
+3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
+>>> Started at 2016-11-07 13:52:11.581000
+
+--> mode:0 1,2
+--> mode:0 2,3
+
+False
+
+>>> Finished at 2016-11-07 13:52:11.581000
+>>> Spent time: 0 msec (0.0 sec)
+
+Get simple decomposition of the given number
+--------------------------------------------
+
+> python primes_factors.py 134043 3
+
+3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
+>>> Started at 2016-11-07 13:53:12.821000
+
+(3**1)(7**1)(13**1)(491**1)
+
+>>> Finished at 2016-11-07 13:53:12.821000
+>>> Spent time: 0 msec (0.0 sec)
