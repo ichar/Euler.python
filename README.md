@@ -740,7 +740,7 @@ Get simple decomposition of the given number
 3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)]
 >>> Started at 2016-11-07 13:53:12.821000
 
-(3**1)(7**1)(13**1)(491**1)
+(3\*\*1)(7\*\*1)(13\*\*1)(491\*\*1)
 
 >>> Finished at 2016-11-07 13:53:12.821000
 >>> Spent time: 0 msec (0.0 sec)
