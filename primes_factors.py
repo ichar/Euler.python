@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import sympy
 from lib.utils import *
 
 version = '1.0'
@@ -25,6 +26,21 @@ def get_next(num):
             return n
 
     return None
+
+def getNextPrime(num, mode=0):
+    n = seq[-1]
+    while True:
+        if n > num or n is None:
+            break
+        n = get_next(n+1)
+
+    if n is None:
+        print('>>> Next not found: %s' % num)
+
+    if debug and not mode:
+        print('>>> seq:%s' % seq)
+
+    return n
 
 def prime(num, mode=0):
     # Это простое число?
@@ -66,18 +82,18 @@ def prime(num, mode=0):
 
     return True
 
-def decompose(num):
+def decompose(num, mode=0, mnemonic=False, list_only=False):
     # Разложение числа на простые сомножители
     # Любое натуральное число, большее единицы, можно представить в виде произведения простых сомножителей, 
     # причем единственным способом.
-    divs = []
-    if run1(99):
+    divs = {}
+    if not mode and getNextPrime(num-1, mode=mode):
         n = num
         p = 0
         while n > 1:
             x = seq[p]
             if n % x == 0:
-                divs.append(x)
+                divs[x] = x in divs and divs[x]+1 or 1
                 n = int(n/x)
                 p = 0
             elif p < len(seq)-1:
@@ -85,42 +101,29 @@ def decompose(num):
             else:
                return None 
 
-    if debug:
-        print('>>> dividers:%s' % divs)
+        if debug:
+            print('>>> dividers:%s' % divs)
+    
+    elif mode == 1:
+        divs = sympy.factorint(num)
 
-    if divs:
-        # Подсчет множителей.
+    if divs and mnemonic:
         # Запись вида: (x1**n1)*(x2**n2)...
         s = ''
-        for x in sorted(set(divs)):
-            if s:
-                s += '*'
-            i = 0
-            while divs and divs[0] == x:
-                divs.pop(0)
-                i += 1
-            s += '(%s**%s)' % (x, str(i))
+        for x in sorted(divs.keys()):
+            s += '(%s**%s)' % (x, divs[x])
 
-        return(s)
+        return s
+
+    if list_only:
+        return divs and sorted(divs.keys()) or 0
 
     return divs
 
 def run1(num):
     # Get next prime number over the given one
     # ----------------------------------------
-    n = seq[-1]
-    while True:
-        if n > num or n is None:
-            break
-        n = get_next(n+1)
-
-    if n is None:
-        print('>>> Next not found: %s' % num)
-
-    if debug:
-        print('>>> seq:%s' % seq)
-
-    return n
+    return getNextPrime(num)
 
 def run2(num):
     # Check if the given number is a prime
@@ -130,7 +133,50 @@ def run2(num):
 def run3(num):
     # Get simple decomposition of the given number
     # --------------------------------------------
-    return decompose(num)
+    return decompose(num, mode=1, mnemonic=True)
+
+def run(n):
+    # Find the first four consecutive integers to have four distinct prime factors each. 
+    # What is the first of these numbers?
+    # ----------------------------------------------------------------------------------
+    res = []
+    i = int('1%s' % str.zfill('0', n-1))
+    while len(res) < n and i < 10**6:
+        i += 1
+        divs = decompose(i, mode=1, list_only=True)
+        if len(divs) == n:
+            if debug:
+                print('>>> %s, divs:%s, %s' % (i, divs, len(res)))
+
+            if not res or i == res[-1] + 1:
+                res.append(i)
+                continue
+        
+        res = []
+
+    return res
+
+def run_demo(n):
+    counter = 0
+    res = []
+    for n in range(1000, 1000000):
+        if counter == 4:
+            print("Answer=", n - 4)
+            break
+        else:
+            x = sympy.factorint(n)
+            if len(x) == 4:
+                counter += 1
+                res.append((n, x))
+            else:
+                counter = 0
+                res = []
+
+    if debug:
+        for n, x in res:
+            print('>>> %s, divs:%s' % (n, x))
+
+    return res
 
 
 if __name__ == '__main__':
@@ -143,15 +189,21 @@ if __name__ == '__main__':
         print('--> Find the first four consecutive integers to have four distinct prime factors each.')
         print('--> http://euler.jakumo.org/problems/view/47.html')
         print('--> ')
-        print('--> Format: python primes_factors.py [-dD] <number> [<mode>]')
+        print('--> Format: python primes_factors.py [-dD] [-demo] <n|number> [<mode>]')
         print('--> ')
         print('--> Options:')
         print('--> ')
         print('-->   -d     : debug flag 0/1')
         print('-->   -D     : deepdebug flag 0/1')
-        print('-->   -mode  : number of run-function (method): 1|2|3, default: 3')
+        print('-->   -demo  : demo mode')
         print('--> ')
-        print('--> Tasks (functions):')
+        print('--> Arguments:')
+        print('--> ')
+        print('-->   n      : primarity count (x1*x2*...*xn), mode=0')
+        print('-->   number : value for subtasks')
+        print('-->   mode   : number of run-function (method): 0|1|2|3, default: 0')
+        print('--> ')
+        print('--> Subtasks (extra functions):')
         print('--> ')
         print('-->   mode=1 : Get next prime number over the given one')
         print('-->   mode=2 : Check if the given number is a prime')
@@ -161,18 +213,20 @@ if __name__ == '__main__':
         
     else:
         num = None
-        mode = 1
+        mode = 0
+        demo = False
 
         print(sys.version)
         
         for x in argv[1:]:
             if x.startswith('-'):
-                if 'd' in x[1:]:
-                    debug = 1
-                if 'D' in x[1:]:
-                    deepdebug = 1
-                if 'all' in x[1:]:
-                    all = True
+                if 'demo' in x[1:]:
+                    demo = True
+                else:
+                    if 'd' in x[1:]:
+                        debug = 1
+                    if 'D' in x[1:]:
+                        deepdebug = 1
             elif not num:
                 num = x.isdigit() and int(x) or None
             else:
@@ -182,7 +236,10 @@ if __name__ == '__main__':
         
         started()
 
-        run = mode == 3 and run3 or mode == 2 and run2 or run1
+        if demo:
+            run = run_demo
+        elif mode:
+            run = mode == 3 and run3 or mode == 2 and run2 or mode == 2 and run2 or run1
         
         print(run(num))
 
