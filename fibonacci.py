@@ -24,10 +24,12 @@ def get_next(num):
         i += 1
 
 def run(num, debug=0):
+    #print('num:%s' % num)
     r = 0
     for x in get_next(num):
+        #print('x:%s' % x)
         p = x%2
-        if isOdd and p == 1 or isEven and p == 0:
+        if (isOdd and p == 1 or isEven and p == 0) or not isOdd & isEven:
             if debug:
                 print('--> %s' % x)
             r += x
@@ -79,6 +81,6 @@ if __name__ == '__main__':
         
         started()
 
-        print(run(num, debug))
+        print(triads(run(num, debug)))
 
         finished()
